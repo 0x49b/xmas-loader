@@ -9,8 +9,14 @@ html {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 8em;
     font-family: 'snowwinter', Arial, sans-serif;
+}
+
+@media only screen and (max-device-width: 480px) {
+    h1 {
+        font-size: 4em;
+    }
 }
 
 .snowwinter {
