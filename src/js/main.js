@@ -18,10 +18,19 @@ function calcProgress() {
     console.log("percent now: " + currentPercent);
     console.log("======================================");
 
-    pb.setAttribute("style", "width: " + currentPercent + "%");
-    pb.setAttribute("aria-valuenow", currentPercent, 10);
-    pbl.innerHTML = currentPercent + "% loaded";
-
+    if(Math.abs(currentPercent) < 100.0){
+        pb.setAttribute("style", "width: " + currentPercent + "%");
+        pb.setAttribute("aria-valuenow", currentPercent, 10);
+        pbl.innerHTML = currentPercent + "% loaded";
+    } else {
+        pb.setAttribute("style", "width: " + 100 + "%");
+        pb.setAttribute("aria-valuenow", 100, 10);
+        pbl.innerHTML = "Merry Christmas!";
+        pb.classList.remove("progress-bar-animated");
+        pb.classList.remove("progress-bar-striped");
+        document.getElementById("tree-image").src="./imgs/tree_decorated.png";
+        document.getElementById("progress-bar-div").style.visibility = 'hidden';
+    }
 }
 
 
