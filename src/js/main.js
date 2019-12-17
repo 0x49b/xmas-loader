@@ -30,6 +30,7 @@ function calcProgress() {
         pb.classList.remove("progress-bar-striped");
         document.getElementById("tree-image").src="./imgs/tree_decorated.png";
         document.getElementById("progress-bar-div").style.visibility = 'hidden';
+        document.getElementById("loading-message").innerHTML = 'Christmas fully loaded';
     }
 }
 
