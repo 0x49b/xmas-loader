@@ -32,6 +32,7 @@ mix.sass('src/sass/styles.scss', 'public/css')
  */
 mix.js('src/js/main.js', 'public/js')
   .copy('src/index.html', 'public/index.html')
+  .copy('src/cookie.html', 'public/cookie.html')
   .copy('src/imgs/', 'public/imgs/')
   .copy('src/css/bootstrap.css', 'public/css/bootstrap.css')
   .copy('src/fonts/', 'public/fonts/')
