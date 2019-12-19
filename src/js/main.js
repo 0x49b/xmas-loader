@@ -1,5 +1,5 @@
 const firstDecember = new Date("2019-12-01").valueOf() / 1000;
-const xmas = new Date("2019-12-25").valueOf() / 1000;
+const xmas = new Date("2019-12-24").valueOf() / 1000;
 const difference = xmas - firstDecember;
 const pb = document.getElementById("progress");
 const pbl = document.getElementById("progressLabel");
